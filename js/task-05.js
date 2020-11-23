@@ -15,10 +15,10 @@ class Car {
     // maxSpeed - максимальная скорость
     // isOn - заведен ли автомобиль, значения true или false.Изначально false
     // distance - общий киллометраж, изначально 0
-    constructor(car) {
+    constructor({maxSpeed, price}) {
         this.speed = 0;
-        this._price = car.price;
-        this.maxSpeed = car.maxSpeed;
+        this._price = price;
+        this.maxSpeed = maxSpeed;
         this.isOn = false;
         this.distance = 0;
     }
